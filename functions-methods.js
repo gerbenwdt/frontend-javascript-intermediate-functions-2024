@@ -9,7 +9,7 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 //
-console.log("   Opdracht 1")
+console.log("\n   Opdracht 1")
 function getEmailDomain(emailAddress){
     const indexAtChar = emailAddress.indexOf("@")+1
     const domainName = emailAddress.substring(indexAtChar,emailAddress.length)
@@ -27,7 +27,7 @@ console.log(getEmailDomain("a.wiersma@outlook.com"))
 // typeOfEmail("t.mellink@novi.nl") geeft geeft "Medewerker"
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
-console.log("   Opdracht 2")
+console.log("\n   Opdracht 2")
 function typeOfEmail(emailAddress){
     if (emailAddress.includes("@novi-education.nl")){
         return emailAddress + " = " + "Student"
@@ -55,7 +55,7 @@ console.log(typeOfEmail("a.wiersma@outlook.com"))
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
-console.log("   Opdracht 3")
+console.log("\n   Opdracht 3")
 // const checkEmailValidity = (emailAddress) => {
 //     if (emailAddress.includes("@") && !(emailAddress.includes(",")) && !((emailAddress.charAt((emailAddress.length) -1)) === ".")) {
 //         return true
